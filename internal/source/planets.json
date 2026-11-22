@@ -1,0 +1,1367 @@
+[
+  {
+    "index": 0,
+    "name": "Super Earth",
+    "sector": "Sol"
+  },
+  {
+    "index": 1,
+    "name": "Klen Dahth II",
+    "sector": "Altus"
+  },
+  {
+    "index": 2,
+    "name": "Pathfinder V",
+    "sector": "Altus"
+  },
+  {
+    "index": 3,
+    "name": "Widow's Harbor",
+    "sector": "Altus"
+  },
+  {
+    "index": 4,
+    "name": "New Haven",
+    "sector": "Altus"
+  },
+  {
+    "index": 5,
+    "name": "Pilen V",
+    "sector": "Altus"
+  },
+  {
+    "index": 6,
+    "name": "Hydrofall Prime",
+    "sector": "Barnard"
+  },
+  {
+    "index": 7,
+    "name": "Zea Rugosia",
+    "sector": "Ferris"
+  },
+  {
+    "index": 8,
+    "name": "Darrowsport",
+    "sector": "Barnard"
+  },
+  {
+    "index": 9,
+    "name": "Fornskogur II",
+    "sector": "Barnard"
+  },
+  {
+    "index": 10,
+    "name": "Midasburg",
+    "sector": "Barnard"
+  },
+  {
+    "index": 11,
+    "name": "Cerberus IIIc",
+    "sector": "Cancri"
+  },
+  {
+    "index": 12,
+    "name": "Prosperity Falls",
+    "sector": "Cancri"
+  },
+  {
+    "index": 13,
+    "name": "Okul VI",
+    "sector": "Gothmar"
+  },
+  {
+    "index": 14,
+    "name": "Martyr's Bay",
+    "sector": "Cantolus"
+  },
+  {
+    "index": 15,
+    "name": "Freedom Peak",
+    "sector": "Cantolus"
+  },
+  {
+    "index": 16,
+    "name": "Fort Union",
+    "sector": "Orion"
+  },
+  {
+    "index": 17,
+    "name": "Kelvinor",
+    "sector": "Cantolus"
+  },
+  {
+    "index": 18,
+    "name": "Wraith",
+    "sector": "Idun"
+  },
+  {
+    "index": 19,
+    "name": "Igla",
+    "sector": "Kelvin"
+  },
+  {
+    "index": 20,
+    "name": "New Kiruna",
+    "sector": "Kelvin"
+  },
+  {
+    "index": 21,
+    "name": "Fort Justice",
+    "sector": "Kelvin"
+  },
+  {
+    "index": 22,
+    "name": "Zegema Paradise",
+    "sector": "Kelvin"
+  },
+  {
+    "index": 23,
+    "name": "Providence",
+    "sector": "Iptus"
+  },
+  {
+    "index": 24,
+    "name": "Primordia",
+    "sector": "Iptus"
+  },
+  {
+    "index": 25,
+    "name": "Sulfura",
+    "sector": "Celeste"
+  },
+  {
+    "index": 26,
+    "name": "Nublaria I",
+    "sector": "Celeste"
+  },
+  {
+    "index": 27,
+    "name": "Krakatwo",
+    "sector": "Celeste"
+  },
+  {
+    "index": 28,
+    "name": "Volterra",
+    "sector": "Korpus"
+  },
+  {
+    "index": 29,
+    "name": "Crucible",
+    "sector": "Korpus"
+  },
+  {
+    "index": 30,
+    "name": "Veil",
+    "sector": "Barnard"
+  },
+  {
+    "index": 31,
+    "name": "Marre IV",
+    "sector": "Barnard"
+  },
+  {
+    "index": 32,
+    "name": "Fort Sanctuary",
+    "sector": "Cancri"
+  },
+  {
+    "index": 33,
+    "name": "Seyshel Beach",
+    "sector": "Cancri"
+  },
+  {
+    "index": 34,
+    "name": "Hellmire",
+    "sector": "Mirin"
+  },
+  {
+    "index": 35,
+    "name": "Effluvia",
+    "sector": "Cancri"
+  },
+  {
+    "index": 36,
+    "name": "Solghast",
+    "sector": "Gothmar"
+  },
+  {
+    "index": 37,
+    "name": "Diluvia",
+    "sector": "Gothmar"
+  },
+  {
+    "index": 38,
+    "name": "Viridia Prime",
+    "sector": "Cantolus"
+  },
+  {
+    "index": 39,
+    "name": "Obari",
+    "sector": "Cantolus"
+  },
+  {
+    "index": 40,
+    "name": "Myradesh",
+    "sector": "Idun"
+  },
+  {
+    "index": 41,
+    "name": "Atrama",
+    "sector": "Idun"
+  },
+  {
+    "index": 42,
+    "name": "Emeria",
+    "sector": "Kelvin"
+  },
+  {
+    "index": 43,
+    "name": "Barabos",
+    "sector": "Marspira"
+  },
+  {
+    "index": 44,
+    "name": "Fenmire",
+    "sector": "Marspira"
+  },
+  {
+    "index": 45,
+    "name": "Mastia",
+    "sector": "Marspira"
+  },
+  {
+    "index": 46,
+    "name": "Shallus",
+    "sector": "Talus"
+  },
+  {
+    "index": 47,
+    "name": "Krakabos",
+    "sector": "Iptus"
+  },
+  {
+    "index": 48,
+    "name": "Iridica",
+    "sector": "Iptus"
+  },
+  {
+    "index": 49,
+    "name": "Azterra",
+    "sector": "Orion"
+  },
+  {
+    "index": 50,
+    "name": "Azur Secundus",
+    "sector": "Sten"
+  },
+  {
+    "index": 51,
+    "name": "Ivis",
+    "sector": "Celeste"
+  },
+  {
+    "index": 52,
+    "name": "Slif",
+    "sector": "Celeste"
+  },
+  {
+    "index": 53,
+    "name": "Caramoor",
+    "sector": "Korpus"
+  },
+  {
+    "index": 54,
+    "name": "Kharst",
+    "sector": "Gallux"
+  },
+  {
+    "index": 55,
+    "name": "Eukoria",
+    "sector": "Morgon"
+  },
+  {
+    "index": 56,
+    "name": "Myrium",
+    "sector": "Morgon"
+  },
+  {
+    "index": 57,
+    "name": "Kerth Secundus",
+    "sector": "Rictus"
+  },
+  {
+    "index": 58,
+    "name": "Parsh",
+    "sector": "Rictus"
+  },
+  {
+    "index": 59,
+    "name": "Reaf",
+    "sector": "Saleria"
+  },
+  {
+    "index": 60,
+    "name": "Irulta",
+    "sector": "Saleria"
+  },
+  {
+    "index": 61,
+    "name": "Emorath",
+    "sector": "Meridian"
+  },
+  {
+    "index": 62,
+    "name": "Ilduna Prime",
+    "sector": "Meridian"
+  },
+  {
+    "index": 63,
+    "name": "Maw",
+    "sector": "Idun"
+  },
+  {
+    "index": 64,
+    "name": "Meridia",
+    "sector": "Umlaut"
+  },
+  {
+    "index": 65,
+    "name": "Borea",
+    "sector": "Sagan"
+  },
+  {
+    "index": 66,
+    "name": "Curia",
+    "sector": "Marspira"
+  },
+  {
+    "index": 67,
+    "name": "Tarsh",
+    "sector": "Marspira"
+  },
+  {
+    "index": 68,
+    "name": "Shelt",
+    "sector": "Talus"
+  },
+  {
+    "index": 69,
+    "name": "Imber",
+    "sector": "Talus"
+  },
+  {
+    "index": 70,
+    "name": "Blistica",
+    "sector": "Gellert"
+  },
+  {
+    "index": 71,
+    "name": "Ratch",
+    "sector": "Iptus"
+  },
+  {
+    "index": 72,
+    "name": "Julheim",
+    "sector": "Nanos"
+  },
+  {
+    "index": 73,
+    "name": "Valgaard",
+    "sector": "Iptus"
+  },
+  {
+    "index": 74,
+    "name": "Arkturus",
+    "sector": "Arturion"
+  },
+  {
+    "index": 75,
+    "name": "Esker",
+    "sector": "Falstaff"
+  },
+  {
+    "index": 76,
+    "name": "Terrek",
+    "sector": "Orion"
+  },
+  {
+    "index": 77,
+    "name": "Cirrus",
+    "sector": "Orion"
+  },
+  {
+    "index": 78,
+    "name": "Crimsica",
+    "sector": "Draco"
+  },
+  {
+    "index": 79,
+    "name": "Heeth",
+    "sector": "Orion"
+  },
+  {
+    "index": 80,
+    "name": "Veld",
+    "sector": "Orion"
+  },
+  {
+    "index": 81,
+    "name": "Alta V",
+    "sector": "Korpus"
+  },
+  {
+    "index": 82,
+    "name": "Ursica XI",
+    "sector": "Borgus"
+  },
+  {
+    "index": 83,
+    "name": "Inari",
+    "sector": "Korpus"
+  },
+  {
+    "index": 84,
+    "name": "Skaash",
+    "sector": "Ursa"
+  },
+  {
+    "index": 85,
+    "name": "Moradesh",
+    "sector": "Celeste"
+  },
+  {
+    "index": 86,
+    "name": "Rasp",
+    "sector": "Gallux"
+  },
+  {
+    "index": 87,
+    "name": "Bashyr",
+    "sector": "Gallux"
+  },
+  {
+    "index": 88,
+    "name": "Regnus",
+    "sector": "Morgon"
+  },
+  {
+    "index": 89,
+    "name": "Mog",
+    "sector": "Morgon"
+  },
+  {
+    "index": 90,
+    "name": "Valmox",
+    "sector": "Rictus"
+  },
+  {
+    "index": 91,
+    "name": "Iro",
+    "sector": "Rictus"
+  },
+  {
+    "index": 92,
+    "name": "Grafmere",
+    "sector": "Rictus"
+  },
+  {
+    "index": 93,
+    "name": "New Stockholm",
+    "sector": "Hanzo"
+  },
+  {
+    "index": 94,
+    "name": "Oasis",
+    "sector": "Rictus"
+  },
+  {
+    "index": 95,
+    "name": "Genesis Prime",
+    "sector": "Rictus"
+  },
+  {
+    "index": 96,
+    "name": "Outpost 32",
+    "sector": "Saleria"
+  },
+  {
+    "index": 97,
+    "name": "Calypso",
+    "sector": "Saleria"
+  },
+  {
+    "index": 98,
+    "name": "Elysian Meadows",
+    "sector": "Guang"
+  },
+  {
+    "index": 99,
+    "name": "Sangis",
+    "sector": "Guang"
+  },
+  {
+    "index": 100,
+    "name": "Trandor",
+    "sector": "Sten"
+  },
+  {
+    "index": 101,
+    "name": "East Iridium Trading Bay",
+    "sector": "Tarragon"
+  },
+  {
+    "index": 102,
+    "name": "Liberty Ridge",
+    "sector": "Meridian"
+  },
+  {
+    "index": 103,
+    "name": "Baldrick Prime",
+    "sector": "Meridian"
+  },
+  {
+    "index": 104,
+    "name": "The Weir",
+    "sector": "Theseus"
+  },
+  {
+    "index": 105,
+    "name": "Kuper",
+    "sector": "Theseus"
+  },
+  {
+    "index": 106,
+    "name": "Oslo Station",
+    "sector": "Sagan"
+  },
+  {
+    "index": 107,
+    "name": "Pöpli IX",
+    "sector": "Xzar"
+  },
+  {
+    "index": 108,
+    "name": "Gunvald",
+    "sector": "Sagan"
+  },
+  {
+    "index": 109,
+    "name": "Dolph",
+    "sector": "Nanos"
+  },
+  {
+    "index": 110,
+    "name": "Bekvam III",
+    "sector": "Nanos"
+  },
+  {
+    "index": 111,
+    "name": "Duma Tyr",
+    "sector": "Nanos"
+  },
+  {
+    "index": 112,
+    "name": "Vernen Wells",
+    "sector": "Hydra"
+  },
+  {
+    "index": 113,
+    "name": "Aesir Pass",
+    "sector": "Hydra"
+  },
+  {
+    "index": 114,
+    "name": "Aurora Bay",
+    "sector": "Valdis"
+  },
+  {
+    "index": 115,
+    "name": "Penta",
+    "sector": "Lacaille"
+  },
+  {
+    "index": 116,
+    "name": "Gaellivare",
+    "sector": "Talus"
+  },
+  {
+    "index": 117,
+    "name": "Vog-Sojoth",
+    "sector": "Tanis"
+  },
+  {
+    "index": 118,
+    "name": "Kirrik",
+    "sector": "Arturion"
+  },
+  {
+    "index": 119,
+    "name": "Mortax Prime",
+    "sector": "Arturion"
+  },
+  {
+    "index": 120,
+    "name": "Wilford Station",
+    "sector": "Arturion"
+  },
+  {
+    "index": 121,
+    "name": "Pioneer II",
+    "sector": "Arturion"
+  },
+  {
+    "index": 122,
+    "name": "Erson Sands",
+    "sector": "Falstaff"
+  },
+  {
+    "index": 123,
+    "name": "Socorro III",
+    "sector": "Falstaff"
+  },
+  {
+    "index": 124,
+    "name": "Bore Rock",
+    "sector": "Falstaff"
+  },
+  {
+    "index": 125,
+    "name": "Fenrir III",
+    "sector": "Umlaut"
+  },
+  {
+    "index": 126,
+    "name": "Turing",
+    "sector": "Umlaut"
+  },
+  {
+    "index": 127,
+    "name": "Angel's Venture",
+    "sector": "Orion"
+  },
+  {
+    "index": 128,
+    "name": "Darius II",
+    "sector": "Borgus"
+  },
+  {
+    "index": 129,
+    "name": "Acamar IV",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 130,
+    "name": "Achernar Secundus",
+    "sector": "Borgus"
+  },
+  {
+    "index": 131,
+    "name": "Achird III",
+    "sector": "Borgus"
+  },
+  {
+    "index": 132,
+    "name": "Acrab XI",
+    "sector": "Ursa"
+  },
+  {
+    "index": 133,
+    "name": "Acrux IX",
+    "sector": "Ursa"
+  },
+  {
+    "index": 134,
+    "name": "Acubens Prime",
+    "sector": "Gallux"
+  },
+  {
+    "index": 135,
+    "name": "Adhara",
+    "sector": "Gallux"
+  },
+  {
+    "index": 136,
+    "name": "Afoyay Bay",
+    "sector": "Gallux"
+  },
+  {
+    "index": 137,
+    "name": "Ain-5",
+    "sector": "Hanzo"
+  },
+  {
+    "index": 138,
+    "name": "Alairt III",
+    "sector": "Hanzo"
+  },
+  {
+    "index": 139,
+    "name": "Alamak VII",
+    "sector": "Hanzo"
+  },
+  {
+    "index": 140,
+    "name": "Alaraph",
+    "sector": "Akira"
+  },
+  {
+    "index": 141,
+    "name": "Alathfar XI",
+    "sector": "Akira"
+  },
+  {
+    "index": 142,
+    "name": "Andar",
+    "sector": "Akira"
+  },
+  {
+    "index": 143,
+    "name": "Asperoth Prime",
+    "sector": "Akira"
+  },
+  {
+    "index": 144,
+    "name": "Bellatrix",
+    "sector": "Guang"
+  },
+  {
+    "index": 145,
+    "name": "Botein",
+    "sector": "Guang"
+  },
+  {
+    "index": 146,
+    "name": "Osupsam",
+    "sector": "Tarragon"
+  },
+  {
+    "index": 147,
+    "name": "Brink-2",
+    "sector": "Tarragon"
+  },
+  {
+    "index": 148,
+    "name": "Bunda Secundus",
+    "sector": "Tarragon"
+  },
+  {
+    "index": 149,
+    "name": "Canopus",
+    "sector": "Tarragon"
+  },
+  {
+    "index": 150,
+    "name": "Caph",
+    "sector": "Theseus"
+  },
+  {
+    "index": 151,
+    "name": "Castor",
+    "sector": "Theseus"
+  },
+  {
+    "index": 152,
+    "name": "Durgen",
+    "sector": "Severin"
+  },
+  {
+    "index": 153,
+    "name": "Draupnir",
+    "sector": "Xzar"
+  },
+  {
+    "index": 154,
+    "name": "Mort",
+    "sector": "Xzar"
+  },
+  {
+    "index": 155,
+    "name": "Ingmar",
+    "sector": "Xzar"
+  },
+  {
+    "index": 156,
+    "name": "Charbal-VII",
+    "sector": "Andromeda"
+  },
+  {
+    "index": 157,
+    "name": "Charon Prime",
+    "sector": "Andromeda"
+  },
+  {
+    "index": 158,
+    "name": "Choepessa IV",
+    "sector": "Trigon"
+  },
+  {
+    "index": 159,
+    "name": "Choohe",
+    "sector": "Lacaille"
+  },
+  {
+    "index": 160,
+    "name": "Chort Bay",
+    "sector": "Lacaille"
+  },
+  {
+    "index": 161,
+    "name": "Claorell",
+    "sector": "Tanis"
+  },
+  {
+    "index": 162,
+    "name": "Clasa",
+    "sector": "Tanis"
+  },
+  {
+    "index": 163,
+    "name": "Demiurg",
+    "sector": "Tanis"
+  },
+  {
+    "index": 164,
+    "name": "Deneb Secundus",
+    "sector": "Arturion"
+  },
+  {
+    "index": 165,
+    "name": "Electra Bay",
+    "sector": "Arturion"
+  },
+  {
+    "index": 166,
+    "name": "Enuliale",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 167,
+    "name": "Epsilon Phoencis VI",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 168,
+    "name": "Erata Prime",
+    "sector": "Umlaut"
+  },
+  {
+    "index": 169,
+    "name": "Estanu",
+    "sector": "Draco"
+  },
+  {
+    "index": 170,
+    "name": "Fori Prime",
+    "sector": "Draco"
+  },
+  {
+    "index": 171,
+    "name": "Gacrux",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 172,
+    "name": "Gar Haren",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 173,
+    "name": "Gatria",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 174,
+    "name": "Gemma",
+    "sector": "Ursa"
+  },
+  {
+    "index": 175,
+    "name": "Grand Errant",
+    "sector": "Farsight"
+  },
+  {
+    "index": 176,
+    "name": "Hadar",
+    "sector": "Ferris"
+  },
+  {
+    "index": 177,
+    "name": "Haka",
+    "sector": "Leo"
+  },
+  {
+    "index": 178,
+    "name": "Haldus",
+    "sector": "Ferris"
+  },
+  {
+    "index": 179,
+    "name": "Halies Port",
+    "sector": "Leo"
+  },
+  {
+    "index": 180,
+    "name": "Herthon Secundus",
+    "sector": "Ferris"
+  },
+  {
+    "index": 181,
+    "name": "Hesoe Prime",
+    "sector": "Rigel"
+  },
+  {
+    "index": 182,
+    "name": "Heze Bay",
+    "sector": "Hanzo"
+  },
+  {
+    "index": 183,
+    "name": "Hort",
+    "sector": "Rigel"
+  },
+  {
+    "index": 184,
+    "name": "Hydrobius",
+    "sector": "Omega"
+  },
+  {
+    "index": 185,
+    "name": "Karlia",
+    "sector": "Omega"
+  },
+  {
+    "index": 186,
+    "name": "Keid",
+    "sector": "Akira"
+  },
+  {
+    "index": 187,
+    "name": "Khandark",
+    "sector": "Guang"
+  },
+  {
+    "index": 188,
+    "name": "Klaka 5",
+    "sector": "Alstrad"
+  },
+  {
+    "index": 189,
+    "name": "Kneth Port",
+    "sector": "Alstrad"
+  },
+  {
+    "index": 190,
+    "name": "Kraz",
+    "sector": "Alstrad"
+  },
+  {
+    "index": 191,
+    "name": "Kuma",
+    "sector": "Hawking"
+  },
+  {
+    "index": 192,
+    "name": "Lastofe",
+    "sector": "Theseus"
+  },
+  {
+    "index": 193,
+    "name": "Leng Secundus",
+    "sector": "Quintus"
+  },
+  {
+    "index": 194,
+    "name": "Lesath",
+    "sector": "Lacaille"
+  },
+  {
+    "index": 195,
+    "name": "Maia",
+    "sector": "Severin"
+  },
+  {
+    "index": 196,
+    "name": "Malevelon Creek",
+    "sector": "Severin"
+  },
+  {
+    "index": 197,
+    "name": "Mantes",
+    "sector": "Xzar"
+  },
+  {
+    "index": 198,
+    "name": "Marfark",
+    "sector": "Andromeda"
+  },
+  {
+    "index": 199,
+    "name": "Martale",
+    "sector": "Andromeda"
+  },
+  {
+    "index": 200,
+    "name": "Matar Bay",
+    "sector": "Andromeda"
+  },
+  {
+    "index": 201,
+    "name": "Meissa",
+    "sector": "Ymir"
+  },
+  {
+    "index": 202,
+    "name": "Mekbuda",
+    "sector": "Valdis"
+  },
+  {
+    "index": 203,
+    "name": "Menkent",
+    "sector": "Hydra"
+  },
+  {
+    "index": 204,
+    "name": "Merak",
+    "sector": "Valdis"
+  },
+  {
+    "index": 205,
+    "name": "Merga IV",
+    "sector": "Valdis"
+  },
+  {
+    "index": 206,
+    "name": "Minchir",
+    "sector": "Gellert"
+  },
+  {
+    "index": 207,
+    "name": "Mintoria",
+    "sector": "Gellert"
+  },
+  {
+    "index": 208,
+    "name": "Mordia 9",
+    "sector": "Hawking"
+  },
+  {
+    "index": 209,
+    "name": "Nabatea Secundus",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 210,
+    "name": "Navi VII",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 211,
+    "name": "Nivel 43",
+    "sector": "Mirin"
+  },
+  {
+    "index": 212,
+    "name": "Oshaune",
+    "sector": "Mirin"
+  },
+  {
+    "index": 213,
+    "name": "Overgoe Prime",
+    "sector": "Sten"
+  },
+  {
+    "index": 214,
+    "name": "Pandion-XXIV",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 215,
+    "name": "Partion",
+    "sector": "Sten"
+  },
+  {
+    "index": 216,
+    "name": "Peacock",
+    "sector": "Sten"
+  },
+  {
+    "index": 217,
+    "name": "Phact Bay",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 218,
+    "name": "Pherkad Secundus",
+    "sector": "Farsight"
+  },
+  {
+    "index": 219,
+    "name": "Polaris Prime",
+    "sector": "Farsight"
+  },
+  {
+    "index": 220,
+    "name": "Pollux 31",
+    "sector": "Farsight"
+  },
+  {
+    "index": 221,
+    "name": "Prasa",
+    "sector": "Farsight"
+  },
+  {
+    "index": 222,
+    "name": "Propus",
+    "sector": "Leo"
+  },
+  {
+    "index": 223,
+    "name": "Ras Algethi",
+    "sector": "Leo"
+  },
+  {
+    "index": 224,
+    "name": "RD-4",
+    "sector": "Rigel"
+  },
+  {
+    "index": 225,
+    "name": "Rogue 5",
+    "sector": "Rigel"
+  },
+  {
+    "index": 226,
+    "name": "Rirga Bay",
+    "sector": "Rigel"
+  },
+  {
+    "index": 227,
+    "name": "Seasse",
+    "sector": "Omega"
+  },
+  {
+    "index": 228,
+    "name": "Senge 23",
+    "sector": "Omega"
+  },
+  {
+    "index": 229,
+    "name": "Setia",
+    "sector": "Omega"
+  },
+  {
+    "index": 230,
+    "name": "Shete",
+    "sector": "Xi Tauri"
+  },
+  {
+    "index": 231,
+    "name": "Siemnot",
+    "sector": "Xi Tauri"
+  },
+  {
+    "index": 232,
+    "name": "Sirius",
+    "sector": "Xi Tauri"
+  },
+  {
+    "index": 233,
+    "name": "Skat Bay",
+    "sector": "Xi Tauri"
+  },
+  {
+    "index": 234,
+    "name": "Spherion",
+    "sector": "Quintus"
+  },
+  {
+    "index": 235,
+    "name": "Stor Tha Prime",
+    "sector": "Quintus"
+  },
+  {
+    "index": 236,
+    "name": "Stout",
+    "sector": "Quintus"
+  },
+  {
+    "index": 237,
+    "name": "Termadon",
+    "sector": "Quintus"
+  },
+  {
+    "index": 238,
+    "name": "Tibit",
+    "sector": "Severin"
+  },
+  {
+    "index": 239,
+    "name": "Tien Kwan",
+    "sector": "Theseus"
+  },
+  {
+    "index": 240,
+    "name": "Troost",
+    "sector": "Trigon"
+  },
+  {
+    "index": 241,
+    "name": "Ubanea",
+    "sector": "Severin"
+  },
+  {
+    "index": 242,
+    "name": "Ustotu",
+    "sector": "Trigon"
+  },
+  {
+    "index": 243,
+    "name": "Vandalon IV",
+    "sector": "Trigon"
+  },
+  {
+    "index": 244,
+    "name": "Varylia 5",
+    "sector": "Trigon"
+  },
+  {
+    "index": 245,
+    "name": "Wasat",
+    "sector": "Ymir"
+  },
+  {
+    "index": 246,
+    "name": "Vega Bay",
+    "sector": "Ymir"
+  },
+  {
+    "index": 247,
+    "name": "Wezen",
+    "sector": "Ymir"
+  },
+  {
+    "index": 248,
+    "name": "Vindemitarix Prime",
+    "sector": "Valdis"
+  },
+  {
+    "index": 249,
+    "name": "X-45",
+    "sector": "Ymir"
+  },
+  {
+    "index": 250,
+    "name": "Yed Prior",
+    "sector": "Tanis"
+  },
+  {
+    "index": 251,
+    "name": "Zefia",
+    "sector": "Tanis"
+  },
+  {
+    "index": 252,
+    "name": "Zosma",
+    "sector": "Gellert"
+  },
+  {
+    "index": 253,
+    "name": "Zzaniah Prime",
+    "sector": "Gellert"
+  },
+  {
+    "index": 254,
+    "name": "Skitter",
+    "sector": "Hawking"
+  },
+  {
+    "index": 255,
+    "name": "Euphoria III",
+    "sector": "Hawking"
+  },
+  {
+    "index": 256,
+    "name": "Diaspora X",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 257,
+    "name": "Gemstone Bluffs",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 258,
+    "name": "Zagon Prime",
+    "sector": "Mirin"
+  },
+  {
+    "index": 259,
+    "name": "Omicron",
+    "sector": "L'estrade"
+  },
+  {
+    "index": 260,
+    "name": "Cyberstan",
+    "sector": "Valdis"
+  },
+  {
+    "index": 261,
+    "name": "Fury",
+    "sector": "Xzar"
+  },
+  {
+    "index": 262,
+    "name": "K",
+    "sector": "Trigon"
+  },
+  {
+    "index": 264,
+    "name": "New Insight",
+    "sector": "TBD"
+  },
+  {
+    "index": 265,
+    "name": "Wayward",
+    "sector": "TBD"
+  },
+  {
+    "index": 266,
+    "name": "Mox",
+    "sector": "Trigon"
+  },
+  {
+    "index": 267,
+    "name": "Big Rock",
+    "sector": "Sten"
+  },
+  {
+    "index": 268,
+    "name": "Luxuriant",
+    "sector": "Jin Xi"
+  },
+  {
+    "index": 269,
+    "name": "Brilliance",
+    "sector": "Orion"
+  },
+  {
+    "index": 270,
+    "name": "Fronteria",
+    "sector": "Umlaut"
+  },
+  {
+    "index": 271,
+    "name": "Zygos",
+    "sector": "Orion"
+  },
+  {
+    "index": 272,
+    "name": "Basquine VIII",
+    "sector": "Rigel"
+  },
+  {
+    "index": 273,
+    "name": "Alderidge Cove",
+    "sector": "Omega"
+  }
+]

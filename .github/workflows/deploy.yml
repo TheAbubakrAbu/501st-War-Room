@@ -1,0 +1,86 @@
+# .github/workflows/deploy.yml
+#
+# On every push to main: test the bot, build it and run the self-test, and
+# only if all of that passes, publish the build and restart the bot on the
+# Oracle server. Aurebesh Droid's and Sabacc Droid's workflows have the same
+# two jobs.
+
+name: Test and Deploy 501st War Room
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # or run it by hand from the Actions tab
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      # setup-go caches Go's module and build caches between runs.
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+
+      - name: Vet and test
+        run: |
+          go vet ./...
+          go test -race ./...
+
+      - name: Build the release binary
+        run: |
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath \
+            -ldflags "-s -w -X main.version=${GITHUB_SHA::7}" -o LinuxBinary ./cmd/warroom
+          ls -lh LinuxBinary
+
+      - name: Run the self-test
+        run: ./LinuxBinary --self-test
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: LinuxBinary
+          path: LinuxBinary
+          retention-days: 7
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write  # to publish the nightly release
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: LinuxBinary
+
+      # start-worker.sh on the server downloads this release by its tag on
+      # every start. It is a pre-release and never "latest", so version
+      # releases keep the Latest badge. Never delete or rename it.
+      - name: Publish the nightly release
+        run: chmod +x LinuxBinary
+      - uses: softprops/action-gh-release@v3
+        with:
+          tag_name: nightly
+          name: Nightly
+          prerelease: true
+          make_latest: false
+          files: LinuxBinary
+
+      - name: Deploy to the Oracle server
+        run: |
+          # The deploy key can only run fixed targets on the server (see ~/deploy.sh there).
+          # Passing the tested commit means a push made during the test never goes live untested.
+          install -m 600 /dev/null "$HOME/deploy_key"
+          printf '%s\n' "$ORACLE_SSH_KEY" > "$HOME/deploy_key"
+          echo "discord-bots ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKm/hUx9SzFwNdzIE1T+B156N/GDkHljKd8+96UW7TMN" > "$HOME/known_hosts"
+          ssh -i "$HOME/deploy_key" \
+              -o UserKnownHostsFile="$HOME/known_hosts" -o HostKeyAlias=discord-bots \
+              "ubuntu@${ORACLE_HOST}" "warroom $TESTED_COMMIT"
+        env:
+          ORACLE_HOST: ${{ secrets.ORACLE_HOST }}
+          ORACLE_SSH_KEY: ${{ secrets.ORACLE_SSH_KEY }}
+          TESTED_COMMIT: ${{ github.sha }}

@@ -1,0 +1,11 @@
+.env
+data/
+data.nosync/
+LinuxBinary
+LinuxBinary.download
+/warroom
+/cmd/warroom/warroom
+/tools/planets/planets
+preview*.png
+.DS_Store
+/tools/logo/logo
