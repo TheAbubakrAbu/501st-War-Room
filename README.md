@@ -4,9 +4,9 @@
 
 Created by **Abubakr Elmallah** on **November 21, 2026**.
 
-[**Add 501st War Room to Your Discord Server**](https://discord.com/oauth2/authorize?client_id=YOUR_APP_ID&permissions=117760&scope=bot+applications.commands)
+[**Add 501st War Room to Your Discord Server**](https://discord.com/oauth2/authorize?client_id=1574183300782886962&permissions=117760&scope=bot+applications.commands)
 
-<a href="https://discord.com/oauth2/authorize?client_id=YOUR_APP_ID&permissions=117760&scope=bot+applications.commands">
+<a href="https://discord.com/oauth2/authorize?client_id=1574183300782886962&permissions=117760&scope=bot+applications.commands">
   <img src="logo.png" alt="501st War Room logo" width="120" style="border-radius:10px;"/>
 </a>
 
@@ -59,7 +59,7 @@ Created by **Abubakr Elmallah** on **November 21, 2026**.
 5. **Invite it** with the scopes `bot` and `applications.commands` and the permissions View Channel, Send Messages, Embed Links, Attach Files and Read Message History (`117760`):
 
    ```
-   https://discord.com/oauth2/authorize?client_id=YOUR_APP_ID&permissions=117760&scope=bot+applications.commands
+   https://discord.com/oauth2/authorize?client_id=1574183300782886962&permissions=117760&scope=bot+applications.commands
    ```
 
    Mention All Roles is only needed if the ping role does not allow anyone to mention it. `/help` builds the same link for whichever bot answers it.
@@ -82,7 +82,7 @@ The planet names built into the bot come from [`internal/source/planets.json`](i
 go run ./tools/planets
 ```
 
-The logo, [`logo.png`](logo.png), is drawn in the map's style by `go run ./tools/logo`. It is every embed's thumbnail (served from this repository) and the app icon to upload in the Discord Developer Portal.
+The logo, [`logo.png`](logo.png), is drawn in the map's style by `go run ./tools/logo`. It is every embed's thumbnail (served from this repository) and the app icon to upload in the Discord Developer Portal. The same command draws [`banner.png`](banner.png), the profile banner to upload on the portal's Bot page. What goes on each portal page is in [`docs/discord-listing.md`](docs/discord-listing.md), and [`docs/discord-settings.md`](docs/discord-settings.md) is the step-by-step checklist for setting it all up.
 
 ## Project Layout
 
@@ -100,7 +100,7 @@ Each package under [`internal`](internal) does one job.
 | `selftest` | The checks behind `--self-test` |
 | `fixtures`, `sample` | Real API replies saved on November 21, 2026, and snapshots built from them |
 | `tools/planets` | Regenerates the built-in planet names |
-| `tools/logo` | Draws `logo.png` |
+| `tools/logo` | Draws `logo.png` and `banner.png` |
 
 The conventions every reply follows are written at the top of [`internal/bot/theme.go`](internal/bot/theme.go), the same ones [Sabacc Droid](https://github.com/TheAbubakrAbu/Sabacc-Droid) and [Aurebesh Droid](https://github.com/TheAbubakrAbu/Aurebesh-Droid) follow, and the self-test checks them. Every embed starts from one helper that gives it its colored bar and the logo as its thumbnail. On top of those, times inside embeds are Discord timestamps, so each reader sees their own time zone, and every war reply's footer says how fresh the data is.
 

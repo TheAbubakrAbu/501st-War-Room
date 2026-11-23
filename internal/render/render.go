@@ -252,11 +252,11 @@ func skyGlow(c *canvas, cx, cy, maxR float64) {
 
 // stars scatters n faint stars over the picture, the same ones every time.
 func stars(c *canvas, n int) {
-	size := float64(c.img.Bounds().Dx())
+	w, h := float64(c.img.Bounds().Dx()), float64(c.img.Bounds().Dy())
 	r := rand.New(rand.NewPCG(501, 501))
 	for range n {
 		a := 0.12 + r.Float64()*0.5
-		x, y := r.Float64()*size, r.Float64()*size
+		x, y := r.Float64()*w, r.Float64()*h
 		rad := 0.4 + r.Float64()*1.1
 		c.circle(x, y, rad, color.NRGBA{220, 230, 255, uint8(math.Round(a * 255))})
 	}

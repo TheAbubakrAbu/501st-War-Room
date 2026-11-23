@@ -19,8 +19,10 @@ type canvas struct {
 	z   vector.Rasterizer
 }
 
-func newCanvas(size int) *canvas {
-	return &canvas{img: image.NewRGBA(image.Rect(0, 0, size, size))}
+func newCanvas(size int) *canvas { return newCanvasRect(size, size) }
+
+func newCanvasRect(w, h int) *canvas {
+	return &canvas{img: image.NewRGBA(image.Rect(0, 0, w, h))}
 }
 
 // fill fills the contours with c. Contours of opposite winding cancel, so a

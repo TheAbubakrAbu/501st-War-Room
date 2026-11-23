@@ -106,16 +106,38 @@ func Logo() ([]byte, error) {
 	c.ring(mid, mid, 482, 4, withAlpha(blue, 0.35))
 	c.ring(mid, mid, 462, 14, blue)
 
-	// The lettering, in Major Order brackets.
-	big, small := fs.Bold(212), fs.MonoBold(60)
-	const top, gap = 392.0, 50.0
+	c.title(fs, mid, 392, 1)
+
+	return encode(c.img)
+}
+
+// title draws "501ST WAR ROOM" in Major Order brackets, centered on cx with
+// the top of the capitals at top. Scale 1 is the logo's size.
+func (c *canvas) title(fs *faces, cx, top, scale float64) {
+	big, small := fs.Bold(212*scale), fs.MonoBold(60*scale)
+	w, _ := titleSize(fs, scale)
 	bigBase := top + capHeight(big)
-	smallBase := bigBase + gap + capHeight(small)
-	w := math.Max(spacedWidth(big, "501ST", 4), spacedWidth(small, "WAR ROOM", 20))
-	bx, by := mid-w/2-52, top-52
-	bw, bh := w+104, smallBase-top+104
-	for _, d := range [][2]float64{{0, 0}, {bw, 0}, {bw, bh}, {0, bh}} {
-		x, y := bx+d[0], by+d[1]
+	smallBase := bigBase + 50*scale + capHeight(small)
+	pad := 52 * scale
+	c.frame(cx-w/2-pad, top-pad, w+2*pad, smallBase-top+2*pad, 64*scale, 12*scale, 6*scale, white)
+	blue := factionColor(war.SuperEarth)
+	c.glowText(big, "501ST", cx, bigBase, 4*scale, int(math.Round(18*scale)), white, withAlpha(blue, 0.9))
+	c.glowText(small, "WAR ROOM", cx, smallBase, 20*scale, int(math.Round(10*scale)), blue, withAlpha(blue, 0.55))
+}
+
+// titleSize is the lettering's width, and its height from the top of the
+// capitals to the bottom line's baseline, without the brackets.
+func titleSize(fs *faces, scale float64) (w, h float64) {
+	big, small := fs.Bold(212*scale), fs.MonoBold(60*scale)
+	w = math.Max(spacedWidth(big, "501ST", 4*scale), spacedWidth(small, "WAR ROOM", 20*scale))
+	return w, capHeight(big) + 50*scale + capHeight(small)
+}
+
+// frame draws Major Order corner brackets around the box at (x, y), w by h,
+// each arm arm pixels long and width wide, extended by ext at the corner.
+func (c *canvas) frame(x, y, w, h, arm, width, ext float64, col color.NRGBA) {
+	for _, d := range [][2]float64{{0, 0}, {w, 0}, {w, h}, {0, h}} {
+		px, py := x+d[0], y+d[1]
 		sx, sy := 1.0, 1.0
 		if d[0] > 0 {
 			sx = -1
@@ -123,13 +145,9 @@ func Logo() ([]byte, error) {
 		if d[1] > 0 {
 			sy = -1
 		}
-		c.line(x, y, x+sx*64, y, 12, 6, white)
-		c.line(x, y, x, y+sy*64, 12, 6, white)
+		c.line(px, py, px+sx*arm, py, width, ext, col)
+		c.line(px, py, px, py+sy*arm, width, ext, col)
 	}
-	c.glowText(big, "501ST", mid, bigBase, 4, 18, white, withAlpha(blue, 0.9))
-	c.glowText(small, "WAR ROOM", mid, smallBase, 20, 10, blue, withAlpha(blue, 0.55))
-
-	return encode(c.img)
 }
 
 // capHeight is how far a capital letter reaches above the baseline.

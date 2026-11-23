@@ -376,14 +376,14 @@ New public GitHub repo `501st-War-Room` (public so the server can download build
   internal/bot/                commands.go, warroom.go, announce.go, replies.go, theme.go
   internal/selftest/
   tools/planets/               regenerates internal/source/planets.json
-  tools/logo/                  draws logo.png
+  tools/logo/                  draws logo.png and banner.png
   .github/workflows/deploy.yml
   start-worker.sh              same as Aurebesh Droid's, for this repo
   run.sh                       loads .env and runs the bot locally with data.nosync
-  README.md  LICENSE  logo.png  .gitignore  go.mod  go.sum
+  README.md  LICENSE  logo.png  banner.png  .gitignore  go.mod  go.sum
 ```
 
-`theme.go` holds the colors, icons, the logo, the creator link, the More Star Wars links and disclaimer, and the conventions comment block the other two bots carry. The logo is drawn by `render.Logo` in the map's style (1024 x 1024, everything inside a round rim since Discord crops avatars round), saved as `logo.png` at the repository root, and served to Discord from raw.githubusercontent.com like the other bots' thumbnails, so it shows once the repository is public. The README uses the same layout as the other bots (the add link and logo under the title, then Features, Commands, Getting Started, Project Layout, Hosting, More Star Wars, Privacy & Data, License, Feedback & Contact). `.gitignore` covers `.env`, `data/`, `data.nosync/`, `LinuxBinary` and any built `warroom` binary. Builds use `go run` or `-o` outside the project, so no binaries land in iCloud.
+`theme.go` holds the colors, icons, the logo, the creator link, the More Star Wars links and disclaimer, and the conventions comment block the other two bots carry. The logo is drawn by `render.Logo` in the map's style (1024 x 1024, everything inside a round rim since Discord crops avatars round), saved as `logo.png` at the repository root, and served to Discord from raw.githubusercontent.com like the other bots' thumbnails, so it shows once the repository is public. `render.Banner` draws the profile banner the same way (1360 x 480, Discord's 17:6 at twice the size, the lettering kept clear of the bottom left where the avatar overlaps), saved as `banner.png`; the portal's listing text is recorded in `docs/discord-listing.md`. The README uses the same layout as the other bots (the add link and logo under the title, then Features, Commands, Getting Started, Project Layout, Hosting, More Star Wars, Privacy & Data, License, Feedback & Contact). `.gitignore` covers `.env`, `data/`, `data.nosync/`, `LinuxBinary` and any built `warroom` binary. Builds use `go run` or `-o` outside the project, so no binaries land in iCloud.
 
 **Configuration:** `DISCORD_TOKEN` (required) and `SUPER_CONTACT` (optional) from the environment; `.env` locally (read by `run.sh`) and on the server (read by systemd).
 

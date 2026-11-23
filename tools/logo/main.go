@@ -1,6 +1,7 @@
-// Command logo draws logo.png, the bot's logo: every embed's thumbnail, the
-// picture in the README, and the app icon to upload in the Discord
-// Developer Portal. Rerun it after changing render.Logo:
+// Command logo draws the bot's pictures for the Discord Developer Portal:
+// logo.png, the app icon (also every embed's thumbnail and the picture in
+// the README), and banner.png, the profile banner. Rerun it after changing
+// render.Logo or render.Banner:
 //
 //	go run ./tools/logo
 package main
@@ -15,15 +16,21 @@ import (
 )
 
 func main() {
-	out := flag.String("out", "logo.png", "file to write")
+	logo := flag.String("out", "logo.png", "where to write the logo")
+	banner := flag.String("banner", "banner.png", "where to write the banner")
 	flag.Parse()
-	b, err := render.Logo()
-	if err == nil {
-		err = atomicfile.Write(*out, b)
+	for _, p := range []struct {
+		path string
+		draw func() ([]byte, error)
+	}{{*logo, render.Logo}, {*banner, render.Banner}} {
+		b, err := p.draw()
+		if err == nil {
+			err = atomicfile.Write(p.path, b)
+		}
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "logo:", err)
+			os.Exit(1)
+		}
+		fmt.Printf("Wrote %s (%d bytes)\n", p.path, len(b))
 	}
-	if err != nil {
-		fmt.Fprintln(os.Stderr, "logo:", err)
-		os.Exit(1)
-	}
-	fmt.Printf("Wrote %s (%d bytes)\n", *out, len(b))
 }
